@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "dgSpecHash": "d2pwj2jihvWhqweF15Ivgm0qljkpL/bDkuKR+SyoWm8mvVAqqMKkVpKkhnLhrHyl7JxDOCyBzsEuibBP5uJuTw==",
+  "success": true,
+  "projectFilePath": "C:\\Zubakov_DZ_Spirin\\Zubakov_DZ_Spirin.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\semzu\\.nuget\\packages\\google.ortools\\9.4.1874\\google.ortools.9.4.1874.nupkg.sha512",
+    "C:\\Users\\semzu\\.nuget\\packages\\google.ortools.runtime.linux-arm64\\9.4.1874\\google.ortools.runtime.linux-arm64.9.4.1874.nupkg.sha512",
+    "C:\\Users\\semzu\\.nuget\\packages\\google.ortools.runtime.linux-x64\\9.4.1874\\google.ortools.runtime.linux-x64.9.4.1874.nupkg.sha512",
+    "C:\\Users\\semzu\\.nuget\\packages\\google.ortools.runtime.osx-arm64\\9.4.1874\\google.ortools.runtime.osx-arm64.9.4.1874.nupkg.sha512",
+    "C:\\Users\\semzu\\.nuget\\packages\\google.ortools.runtime.osx-x64\\9.4.1874\\google.ortools.runtime.osx-x64.9.4.1874.nupkg.sha512",
+    "C:\\Users\\semzu\\.nuget\\packages\\google.ortools.runtime.win-x64\\9.4.1874\\google.ortools.runtime.win-x64.9.4.1874.nupkg.sha512",
+    "C:\\Users\\semzu\\.nuget\\packages\\google.protobuf\\3.19.4\\google.protobuf.3.19.4.nupkg.sha512"
+  ],
+  "logs": []
+}

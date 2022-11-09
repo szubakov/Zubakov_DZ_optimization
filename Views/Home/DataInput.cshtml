@@ -1,0 +1,105 @@
+﻿
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+    @using (Html.BeginForm("DataInput", "Home", FormMethod.Post))
+    {
+        <p>
+        </p>
+        <div class="container">
+            <h2>Исходные данные</h2>
+            <div class="table-responsive">
+                <table class="table">
+                  
+                    <thead>
+                        
+                        <tr>
+                            <th style="text-align: right;" colspan="7">Количество заготовок на 1 изделие по соответствующему способу раскроя, шт</th>
+                        </tr>
+                        <tr>
+
+                            <th style="text-align: center;">Вид заготовки</th>
+                            <th style="text-align: center;">Площадь, см2</th>
+                            <th style="text-align: center;">1</th>
+                            <th style="text-align: center;">2</th>
+                            <th style="text-align: center;">3</th>
+                            <th style="text-align: center;">4</th>
+                            <th style="text-align: center;">5</th>
+                            <th style="text-align: center;">6</th>
+                            <th style="text-align: center;">Количество заготовок на 1 изделие, шт</th>
+
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td style="text-align: center;">А1</td>
+                            <td style="text-align: center;">@Html.TextBox("DataInput.Square_Z_1", (double)(ViewBag.DataInput.Square_Z_1), htmlAttributes: new { type = "text", style = " width:100px; " })</td>
+                            <td style="text-align: center;">@Html.TextBox("DataInput.Koeff_Z_1", (double)(ViewBag.DataInput.Koeff_Z_1), htmlAttributes: new { type = "text", style = " width:100px; " })</td>
+                            <td style="text-align: center;">@Html.TextBox("DataInput.Koeff_Z_2", (double)(ViewBag.DataInput.Koeff_Z_2), htmlAttributes: new { type = "text", style = " width:100px; " })</td>
+                            <td style="text-align: center;">@Html.TextBox("DataInput.Koeff_Z_3", (double)(ViewBag.DataInput.Koeff_Z_3), htmlAttributes: new { type = "text", style = " width:100px; " })</td>
+                            <td style="text-align: center;">@Html.TextBox("DataInput.Koeff_Z_4", (double)(ViewBag.DataInput.Koeff_Z_4), htmlAttributes: new { type = "text", style = " width:100px; " })</td>
+                            <td style="text-align: center;">@Html.TextBox("DataInput.Koeff_Z_5", (double)(ViewBag.DataInput.Koeff_Z_5), htmlAttributes: new { type = "text", style = " width:100px; " })</td>
+                            <td style="text-align: center;">@Html.TextBox("DataInput.Koeff_Z_6", (double)(ViewBag.DataInput.Koeff_Z_6), htmlAttributes: new { type = "text", style = " width:100px; " })</td>
+                            <td style="text-align: center;">@Html.TextBox("DataInput.Number_Blanks_1", (double)(ViewBag.DataInput.Number_Blanks_1), htmlAttributes: new { type = "text", style = " width:100px; " })</td>
+                        </tr>                                                
+                        <tr>
+                            <td style="text-align: center;">А2</td>
+                            <td style="text-align: center;">@Html.TextBox("DataInput.Square_Z_2", (double)(ViewBag.DataInput.Square_Z_2), htmlAttributes: new { type = "text", style = " width:100px; " })</td>
+                            <td style="text-align: center;">@Html.TextBox("DataInput.ConstraintKoeff_1_X1", (double)(ViewBag.DataInput.ConstraintKoeff_1_X1), htmlAttributes: new { type = "text", style = " width:100px; " })</td>
+                            <td style="text-align: center;">@Html.TextBox("DataInput.ConstraintKoeff_1_X2", (double)(ViewBag.DataInput.ConstraintKoeff_1_X2), htmlAttributes: new { type = "text", style = " width:100px; " })</td>
+                            <td style="text-align: center;">@Html.TextBox("DataInput.ConstraintKoeff_1_X3", (double)(ViewBag.DataInput.ConstraintKoeff_1_X3), htmlAttributes: new { type = "text", style = " width:100px; " })</td>
+                            <td style="text-align: center;">@Html.TextBox("DataInput.ConstraintKoeff_1_X4", (double)(ViewBag.DataInput.ConstraintKoeff_1_X4), htmlAttributes: new { type = "text", style = " width:100px; " })</td>
+                            <td style="text-align: center;">@Html.TextBox("DataInput.ConstraintKoeff_1_X5", (double)(ViewBag.DataInput.ConstraintKoeff_1_X5), htmlAttributes: new { type = "text", style = " width:100px; " })</td>
+                            <td style="text-align: center;">@Html.TextBox("DataInput.ConstraintKoeff_1_X6", (double)(ViewBag.DataInput.ConstraintKoeff_1_X6), htmlAttributes: new { type = "text", style = " width:100px; " })</td>
+                            <td style="text-align: center;">@Html.TextBox("DataInput.Number_Blanks_2", (double)(ViewBag.DataInput.Number_Blanks_2), htmlAttributes: new { type = "text", style = " width:100px; " })</td>
+                        </tr>
+                        <tr>
+                            <td style="text-align: center;">А3</td>
+                            <td style="text-align: center;">@Html.TextBox("DataInput.Square_Z_3", (double)(ViewBag.DataInput.Square_Z_3), htmlAttributes: new { type = "text", style = " width:100px; " })</td>
+                            <td style="text-align: center;">@Html.TextBox("DataInput.ConstraintKoeff_2_X1", (double)(ViewBag.DataInput.ConstraintKoeff_2_X1), htmlAttributes: new { type = "text", style = " width:100px; " })</td>
+                            <td style="text-align: center;">@Html.TextBox("DataInput.ConstraintKoeff_2_X2", (double)(ViewBag.DataInput.ConstraintKoeff_2_X2), htmlAttributes: new { type = "text", style = " width:100px; " })</td>
+                            <td style="text-align: center;">@Html.TextBox("DataInput.ConstraintKoeff_2_X3", (double)(ViewBag.DataInput.ConstraintKoeff_2_X3), htmlAttributes: new { type = "text", style = " width:100px; " })</td>
+                            <td style="text-align: center;">@Html.TextBox("DataInput.ConstraintKoeff_2_X4", (double)(ViewBag.DataInput.ConstraintKoeff_2_X4), htmlAttributes: new { type = "text", style = " width:100px; " })</td>
+                            <td style="text-align: center;">@Html.TextBox("DataInput.ConstraintKoeff_2_X5", (double)(ViewBag.DataInput.ConstraintKoeff_2_X5), htmlAttributes: new { type = "text", style = " width:100px; " })</td>
+                            <td style="text-align: center;">@Html.TextBox("DataInput.ConstraintKoeff_2_X6", (double)(ViewBag.DataInput.ConstraintKoeff_2_X6), htmlAttributes: new { type = "text", style = " width:100px; " })</td>
+                            <td style="text-align: center;">@Html.TextBox("DataInput.Number_Blanks_3", (double)(ViewBag.DataInput.Number_Blanks_3), htmlAttributes: new { type = "text", style = " width:100px; " })</td>
+                        </tr>
+                                              
+                    </tbody>
+                </table>
+                
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Параметр</th>
+                            <th>Значение</th>
+                        </tr>
+                    </thead>
+                    <tbody>                        
+                        <tr>
+                            <td>Заданная длина полос проката см2.</td>
+                            <td>@Html.TextBox("DataInput.Length_prokata", (double)(ViewBag.DataInput.Length_prokata), htmlAttributes: new { type = "text", style = " width:100px; " })</td>
+                        </tr>
+                        <tr>
+                            <td>Всего необходимо изготовить шт. изделий.</td>
+                            <td>@Html.TextBox("DataInput.Necc_amount", (double)(ViewBag.DataInput.Necc_amount), htmlAttributes: new { type = "text", style = " width:100px; " })</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        
+        <div class="form-group" style="margin-left: auto; margin-top: 20px">
+            <button type="submit" name="action" value="toSolver" style="font-size: 16px" class="btn btn-primary">Расчет</button>
+        </div>
+    }
+
+    @*<a href="@Url.Action("Excel", "Home")">Скачать решение в Excel</a>*@
+</body>
+</html>

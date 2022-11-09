@@ -1,0 +1,97 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+    <div class="container">
+        <h2>Расчетные показатели</h2>
+
+        <div class="table-responsive">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Наименование показателя, ед. изм.</th>
+                        <th>Величина</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Величина целевой функции</td>
+                        <td>@Math.Round(ViewBag.Get_objective, 2)</td>
+                    </tr>
+                    <tr>
+                        <td>Ограничение 1</td>
+                        <td>@Math.Round(ViewBag.Get_opt_X1, 2)</td>
+                    </tr>
+                    <tr>
+                        <td>Ограничение 2</td>
+                        <td>@Math.Round(ViewBag.Get_opt_X2, 2)</td>
+                    </tr>
+                    <tr>
+                        <td>Ограничение 3</td>
+                        <td>@Math.Round(ViewBag.Get_opt_X3, 2)</td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>X1</th>
+                        <th>X2</th>
+                        <th>X3</th>
+                        <th>X4</th>
+                        <th>X5</th>
+                        <th>X6</th>
+                        
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                       
+                        <td>@Math.Round(ViewBag.Value1_X1, 2)</td>
+                        <td>@Math.Round(ViewBag.Value1_X2, 2)</td>
+                        <td>@Math.Round(ViewBag.Value1_X3, 2)</td>
+                        <td>@Math.Round(ViewBag.Value1_X4, 2)</td>
+                        <td>@Math.Round(ViewBag.Value1_X5, 2)</td>
+                        <td>@Math.Round(ViewBag.Value1_X6, 2)</td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+            
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Отходы 1</th>
+                        <th>Отходы 2</th>
+                        <th>Отходы 3</th>
+                        <th>Отходы 4</th>
+                        <th>Отходы 5</th>
+                        <th>Отходы 6</th>
+
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+
+                        <td>@Math.Round(ViewBag.Vaste_X1, 2)</td>
+                        <td>@Math.Round(ViewBag.Vaste_X2, 2)</td>
+                        <td>@Math.Round(ViewBag.Vaste_X3, 2)</td>
+                        <td>@Math.Round(ViewBag.Vaste_X4, 2)</td>
+                        <td>@Math.Round(ViewBag.Vaste_X5, 2)</td>
+                        <td>@Math.Round(ViewBag.Vaste_X6, 2)</td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </div>
+    </div>       
+
+    <p></p>
+</body>
+</html>
